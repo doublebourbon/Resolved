@@ -4,7 +4,7 @@ Created on Wed Nov  7 11:02:14 2018
 
 @author: Aymane
 """
-123
+
 #getting the data
 from keras.datasets import mnist
 (train_images,train_labels),(test_images,test_labels)=mnist.load_data()
