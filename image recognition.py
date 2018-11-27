@@ -8,7 +8,6 @@ Created on Wed Nov  7 11:02:14 2018
 #getting the data
 from keras.datasets import mnist
 (train_images,train_labels),(test_images,test_labels)=mnist.load_data()
-digit=test_images[3]
 #building the model
 from keras import models 
 from keras import layers 
@@ -19,7 +18,7 @@ network.add(layers.Dense(10,activation='sigmoid'))
 #the compilation step
 network.compile(optimizer='rmsprop',loss='categorical_crossentropy',metrics=['accuracy'])
 
-#prepare thz image data 
+#prepare the image data 
 train_images=train_images.reshape(60000,28*28)
 train_images=train_images.astype('float32')/255
 
