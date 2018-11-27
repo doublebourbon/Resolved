@@ -29,7 +29,7 @@ test_images=test_images.astype('float32')/255
 from keras.utils import to_categorical
 train_labels=to_categorical(train_labels)
 test_labels=to_categorical(test_labels)
-
+#modification#
 #fitting the model
 e=5
 network.fit(train_images,train_labels,epochs=e,batch_size=128,verbose=0)
